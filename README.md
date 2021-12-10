@@ -4,7 +4,7 @@
 ```
 docker-compose build
 docker-compose up
-docker exec podeo bash -c "cd /var/www/podeo;php artisan storage:link; php artisan migrate:install; php artisan migrate:fresh"
+docker exec podeo bash -c "cd /var/www/podeo; composer install; php artisan storage:link; php artisan migrate:install; php artisan migrate:fresh"
 ```
  
 **Please dont use php artisan serve
