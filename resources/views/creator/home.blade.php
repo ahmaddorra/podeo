@@ -30,7 +30,7 @@
 
                 <li class="item type2" id="podcast-{{$podcast->id}}">
                     <div class="task">
-                        <div class="icon"><img src="images/MainPhotoNew.jpg" alt="" width="50" height="50"/></div>
+                        <div class="icon"><img src="{{asset('public/storage/'.$podcast->image)}}" alt="" width="50" height="50"/></div>
                         <div class="name">{{$podcast->name}} </div>
                     </div>
                     <div class="dates">
