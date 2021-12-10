@@ -6,10 +6,12 @@ docker-compose build
 docker-compose up
 docker exec podeo bash -c "cd /var/www/podeo; php artisan storage:link; php artisan migrate:install; php artisan migrate:fresh"
 ```
- 
+
 **Please dont use php artisan serve
 the website is configured to work with apache;
 index.php, .htaccess are at the top of root folder.....
+
+the database will be up and populated with some predefined data sets
 
 Docker was really coooooooolll, i will definitely use it in the future
 thank youuu for your time and
