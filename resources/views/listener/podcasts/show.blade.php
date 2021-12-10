@@ -65,7 +65,7 @@
                             'track': "{{$loop->iteration}}",
                             'name' : "{{$episode->name}}",
                             "duration":"{{$episode->duration}}",
-                            "file": "{{asset('storage/'.$episode->audio)}}"
+                            "file": "{{asset('public/storage/'.$episode->audio)}}"
                         },
                         @endforeach
                         ],
